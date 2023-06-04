@@ -17,6 +17,7 @@ services:
       - .:/workspace
       - app_static:${CONTAINER_STORAGE_PATH}
     environment:
+      IS_DEBUG:
       IN_CONTAINER:
       CONTAINER_STORAGE_PATH:
       DEPLOY_STAGE:
