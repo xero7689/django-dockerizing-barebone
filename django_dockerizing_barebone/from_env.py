@@ -1,7 +1,7 @@
 import os
 
 # General Settings
-APP_NAME = os.environ.get('APP_NAME', 'blog')
+APP_NAME = os.environ.get('APP_NAME', 'app')
 DEPLOY_STAGE = os.environ.get('DEPLOY_STAGE', 'local')
 IS_DEBUG = (os.environ.get('IS_DEBUG', 'True') == 'True')
 

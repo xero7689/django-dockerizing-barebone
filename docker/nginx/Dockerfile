@@ -2,7 +2,7 @@ FROM nginx:latest
 LABEL maintainer=""
 
 COPY docker/nginx/nginx.conf /etc/nginx/nginx.conf
-COPY docker/nginx/blog_nginx.conf /etc/nginx/sites-available/ 
+COPY docker/nginx/app_nginx.conf /etc/nginx/sites-available/ 
 
 RUN mkdir -p /etc/nginx/sites-enabled/\
     && ln -s /etc/nginx/sites-available/my_nginx.conf /etc/nginx/sites-enabled/\
